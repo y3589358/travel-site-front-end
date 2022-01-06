@@ -1,0 +1,79 @@
+.tree-filter-item.has-child{
+  background-size: 25px;
+  cursor: pointer;
+}
+
+.tree-filter-item.has-child.child-is-closed + .tree-filter-list{
+  display: none;
+}
+.tree-filter-item:hover {
+  background-color: rgba(0, 44, 94, 0.1);
+}
+.tree-filter-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4A4A4A;
+  // margin-bottom: 15px;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-position-x: 226px;
+  background-position-y: 4px;
+  background-size: 0 0;
+  height: 32px;
+  padding: 0 25px;
+
+  .tree-filter-item-label {
+    margin-left: 15px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #4A4A4A;
+  }
+
+  .toggle-btn.active{
+    display: inline-block;
+    background-size: 24px 14px;
+    width: 24px;
+    height: 14px;
+    cursor: pointer;
+  }
+  .toggle-btn{
+    display: none;
+  }
+
+  &:not(.tree-filter-item-level-0) {
+    font-size: 12px;
+    // margin-bottom: 12px;
+  }
+
+  .tree-filter-item-checkbox {
+    vertical-align: text-bottom;
+    &.checked {
+      .chakra-checkbox__control {
+        background-color: #002C5E;
+        border-color: #002C5E;
+        color: #fff;
+      }
+
+    }
+
+    .chakra-checkbox__control {
+      border: 1px solid #4A4A4A;
+      border-radius: 1px;
+      color: #fff;
+    }
+    .chakra-checkbox__control[data-indeterminate]{
+      background-color: #002C5E;
+    }
+
+    .chakra-checkbox__control[aria-checked=true], 
+    .chakra-checkbox__control[data-checked], 
+    .chakra-checkbox__control[data-focus], 
+    .chakra-checkbox__control:focus{
+      box-shadow: none;
+    }
+  }
+}

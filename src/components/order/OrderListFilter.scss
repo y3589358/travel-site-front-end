@@ -1,0 +1,159 @@
+.order-list-filter {
+  .chakra-select__wrapper {
+    flex: 0 0 156px;
+    margin-left: 16px;
+    border-color: #8B8B8B;
+
+    .chakra-select {
+      height: 30px;
+      font-size: 14px;
+    }
+  }
+
+  .chakra-input {
+    border-color: #8B8B8B;
+  }
+
+  .chakra-input:focus{
+    border-color: #002C5E;
+    box-shadow:none;
+  }
+
+  .chakra-input:hover{
+    border-color: #002C5E;
+  }
+
+  .chakra-radio {
+    margin-left: 16px;
+
+    .chakra-radio__control {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #8B8B8B;
+    }
+
+    .chakra-radio__control[data-checked] {
+      box-shadow:none;
+      background: #fff;
+      color: #002C5E;
+    }
+
+    .chakra-radio__control[data-checked][data-hover] {
+      background: #fff;
+      border: 1px solid #8B8B8B;
+    }
+
+  }
+
+  .btn {
+    height: 48px;
+    padding: 0 32px;
+    border-radius: 6px;
+    margin-left: 8px;
+    font-weight: normal;
+
+    &.primary {
+      color: #FFFFFF;
+      background-color: #002C5E;
+      border: 1px solid #002C5E;
+    }
+
+    &.primary:hover {
+      background: rgba(0, 44, 94, 0.5);
+      color: #FFFFFF;
+    }
+
+    &.primary:focus {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #002C5E;
+      color: #FFFFFF;
+      box-shadow:0 0 0 1px rgba(0, 0, 0, 0);
+      border: 1px solid transparent;
+    }
+
+    &.plain {
+      color: #002C5E;
+      background-color: #FFFFFF;
+      border: 1px solid #002C5E;
+    }
+
+    &.plain:hover {
+      color: #002C5E80;
+      border: 1px solid rgba(0, 44, 94, 0.5);
+    }
+
+    &.plain:focus {
+      color: #002C5E;
+      border: 1px solid rgba(0, 44, 94, 0.5);
+      background: linear-gradient(0deg, rgba(0, 44, 94, 0.2), rgba(0, 44, 94, 0.2));
+      border: 1px solid #002C5E;
+      box-shadow: none;
+    }
+  }
+
+  .order-list-filter-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .order-status{
+      margin: 0 16px;
+    }
+    .search {
+      flex: 0 0 406px;
+      height: 30px;
+      font-size: 14px;
+    }
+  }
+
+  .order-list-filter-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .select-group {
+      flex: 1 0 auto;
+      display: flex;
+      align-items: center;
+
+      .time-select {
+        flex: 0 0 260px;
+        height: 30px;
+        font-size: 14px;
+        margin-left: 16px;
+        position: relative;
+
+        .date-range-picker {
+          height: 30px;
+
+          .date-time-input {
+            height: 30px;
+            justify-content: start;
+            padding-left: 10px;
+
+            .date-time-input-icon {
+              display: none;
+            }
+          }
+          .date-time-input:hover{
+            background-color: #FFFFFF;
+          }
+
+          .date-time-input.selected:hover {
+            background-color: #002C5E;
+          }
+        }
+
+        .down-icon {
+          position: absolute;
+          right: 12px;
+          top: 7px;
+        }
+      }
+
+    }
+
+    .btn-group {
+      flex: 0 1 auto;
+    }
+  }
+}

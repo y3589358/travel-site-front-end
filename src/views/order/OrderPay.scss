@@ -1,0 +1,146 @@
+.order-pay {
+  .order-pay-top {
+    margin-top: 20px;
+    position: relative;
+    height: 50px;
+
+    .order-pay-nav-step-list-wrapper {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      z-index: -1;
+
+      .nav-step-list {
+        width: 640px;
+      }
+    }
+  }
+
+  .order-pay-title {
+    font-size: 28px;
+    line-height: 120%;
+    font-weight: 500;
+    color: #4A4A4A;
+    margin-top: 16px;
+    margin-bottom: 10px;
+  }
+
+  .order-pay-container {
+    display: flex;
+    margin-bottom: 48px;
+
+    .order-pay-content {
+      flex: 1 0 auto;
+
+      .order-pay-box {
+        margin-top: 16px;
+        margin-bottom: 48px;
+      }
+
+      .order-travel-info-box {
+        margin-top: 16px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+      }
+
+      .order-contact-info-box {
+        margin-top: 16px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    .order-pay-sidebar {
+      flex: 0 0 340px;
+      margin-left: 16px;
+    }
+  }
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  font-family: PingFang SC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  
+  .modal-title {
+    width: 100%;
+    // display: flex;
+    // justify-content: center;
+    color: #002C5E;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+
+    .icon {
+      margin-right: 5px;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      margin-bottom: 8px;
+      justify-content: center;
+
+      img{
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+
+  .balance-content {
+    text-align: center;
+
+    .label {
+      font-size: 14px;
+      color: #333333;
+      line-height: 140%;
+    }
+
+    .value {
+      font-size: 14px;
+      color: #002C5E;
+      line-height: 140%;
+
+      .unit {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .overdue,
+  .redirect-content {
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .btn {
+    height: 48px;
+    padding: 0 32px;
+    border-radius: 6px;
+    margin-left: 8px;
+    font-weight: normal;
+
+    &.warning {
+      color: #002C5E;
+      background-color: #F0D43A;
+      border: 1px solid #F0D43A;
+    }
+
+    &.warning:hover{
+      background-color: #F0D43A80;
+    }
+  
+    &.warning:focus {
+      box-shadow: none;
+      border: none;
+    }
+
+  }
+}

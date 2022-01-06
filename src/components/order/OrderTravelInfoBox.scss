@@ -1,0 +1,221 @@
+.order-travel-info-box {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  padding: 24px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+
+  .order-travel-info-box-order {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #D7D7D7;
+
+    .order-no {
+      font-size: 18px;
+      line-height: 130%;
+      font-weight: 500;
+      color: #333333;
+      margin-right: 8px;
+
+      .label {
+        margin-right: 4px;
+      }
+    }
+
+    .order-status {
+      flex: 0 0 96px;
+      text-align: center;
+      border-radius: 16px;
+      font-size: 16px;
+      line-height: 140%;
+      height: 24px;
+
+      &.tbc {
+        background-color: rgba(255, 103, 112, 0.1);
+        color: #FF6770;
+      }
+
+      &.confirmed {
+        background-color: rgba(89, 207, 213, 0.1);;
+        color: #59CFD5;
+      }
+    }
+
+    .cancel-policy {
+      flex: 1 0 auto;
+      text-align: right;
+      display: flex;
+      justify-content: end;
+
+      .icon {
+        height: 23px;
+        margin-right: 2px;
+      }
+    }
+  }
+
+  .order-travel-info-box-product {
+    display: flex;
+
+    .order-travel-info-box-product-image {
+      flex: 0 0 100px;
+    }
+
+    .order-travel-info-box-product-info-wrapper {
+      flex: 1 0 auto;
+      margin-left: 16px;
+      display: flex;
+      align-items: center;
+
+      .order-travel-info-box-product-info {
+        .order-travel-info-box-product-title {
+          font-size: 18px;
+          line-height: 130%;
+          font-weight: 500;
+          color: #000000;
+        }
+
+        .order-travel-info-box-product-notice-list {
+          margin-top: 4px;
+
+          .order-travel-info-box-product-notice-item {
+            margin-top: 4px;
+            font-size: 14px;
+            line-height: 120%;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+
+  .order-travel-info-box-content {
+    margin-top: 24px;
+
+    .order-travel-info-box-title {
+      display: flex;
+      align-items: center;
+      padding-bottom: 9.5px;
+      border-bottom: 1px solid #8B8B8B;
+
+      .title {
+        flex: 0 0 132px;
+        margin-right: 16px;
+        font-size: 22px;
+        line-height: 130%;
+        font-weight: 500;
+        color: #000000;
+      }
+
+      .frequent-traveller {
+        flex: 0 0 230px;
+        display: flex;
+        align-items: center;
+
+        .frequent-traveller-title {
+          flex: 0 0 45px;
+          font-size: 14px;
+          line-height: 120%;
+          color: #000000;
+          margin-right: 10px;
+        }
+
+        .frequent-traveller-select {
+          flex: 0 0 158px;
+          height: 30px;
+          color: #8B8B8B;
+          font-size: 14px;
+          border: 1px solid #8B8B8B;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .order-travel-info-box-form {
+      margin-top: 24px;
+
+      .row {
+        display: flex;
+        .select-nationality{
+          .rc_select_1_list{
+            height: 30px;
+          }
+        }
+
+        .chakra-form-control {
+          flex: 0 0 250px;
+          margin-right: 16px;
+          margin-bottom: 16px;
+          .label-error-wrap{
+            display: flex;
+            .chakra-form__label{
+              margin-bottom: 0;
+            }
+            .chakra-form__error-message{
+              margin-top: 0;
+            }
+          }
+          & > span {
+            font-size: 14px;
+            line-height: 120%;
+          }
+
+          .chakra-form__label {
+            font-size: 14px;
+            font-weight: normal;
+            color: #333333;
+            margin-bottom: 4px;
+          }
+
+          .chakra-input,
+          .chakra-select {
+            height: 30px;
+            border: 1px solid #8B8B8B;
+            border-radius: 5px;
+            background-color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 400;
+            //color: #8B8B8B;
+          }
+
+          .chakra-input[aria-invalid*="true"],
+          .chakra-select[aria-invalid*="true"]{
+            border: none;
+          }
+
+          .chakra-input:focus, .chakra-input[data-focus]{
+            color: #002C5E;
+          }
+        }
+
+        .chakra-checkbox {
+          &.checked {
+            .chakra-checkbox__control {
+              background-color: #002C5E;
+              border-color: #002C5E;
+            }
+          }
+
+          .chakra-checkbox__control {
+            margin-right: 8px;
+            border: 2px solid #8B8B8B;
+          }
+
+          .chakra-checkbox__control:focus,
+          .chakra-checkbox__control[data-focus]
+          {
+            box-shadow: none;
+          }
+          
+        }
+
+        &:last-child {
+          .chakra-form-control {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

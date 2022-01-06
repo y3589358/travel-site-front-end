@@ -1,0 +1,3 @@
+interface CartProps {
+  productCount?: number;
+}

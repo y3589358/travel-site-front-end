@@ -1,0 +1,80 @@
+.order-pay-info-box {
+  padding: 24px 16px 24px 24px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-bottom: 16px;
+
+  .order-pay-info-box-title {
+    font-size: 22px;
+    line-height: 130%;
+    font-weight: 500;
+    color: #002C5E;
+    margin-bottom: 16px;
+  }
+
+  .order-pay-info-box-top {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #D7D7D7;
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+
+      .label {
+        color: #8B8B8B;
+        font-size: 14px;
+        line-height: 120%;
+      }
+
+      .value {
+        color: #333333;
+        font-size: 14px;
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+
+        .time {
+          font-size: 24px;
+          line-height: 120%;
+          font-weight: 500;
+          color: #FF6770;
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+
+  .order-pay-info-box-bottom {
+    display: flex;
+    align-items: center;
+
+    .label {
+      font-size: 14px;
+      line-height: 120%;
+      margin-right: 12px;
+      color: #000000;
+    }
+
+    .total-amount {
+      display: flex;
+      align-items: center;
+      color: #002C5E;
+
+      .unit {
+        margin-right: 4px;
+        font-size: 16px;
+        line-height: 140%;
+      }
+
+      .value {
+        font-size: 24px;
+        line-height: 120%;
+        font-weight: 500;
+      }
+    }
+  }
+}

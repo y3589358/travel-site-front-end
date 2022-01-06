@@ -1,0 +1,93 @@
+.order-contact-info-box {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  padding: 24px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+
+  .order-contact-info-box-content {
+    .order-contact-info-box-title {
+      display: flex;
+      align-items: center;
+      padding-bottom: 9.5px;
+      border-bottom: 1px solid #8B8B8B;
+
+      .title {
+        flex: 0 0 132px;
+        margin-right: 16px;
+        font-size: 22px;
+        line-height: 130%;
+        font-weight: 500;
+        color: #000000;
+      }
+    }
+
+    .order-contact-info-box-form {
+      margin-top: 24px;
+
+      .row {
+        display: flex;
+
+        .chakra-form-control {
+          flex: 0 0 250px;
+          margin-right: 16px;
+          margin-bottom: 16px;
+          .label-error-wrap{
+            display: flex;
+            .chakra-form__label{
+              margin-bottom: 0;
+            }
+            .chakra-form__error-message{
+              margin-top: 0;
+            }
+          }
+
+          .chakra-form__label {
+            font-size: 14px;
+            font-weight: normal;
+            color: #333333;
+            margin-bottom: 4px;
+          }
+
+          .chakra-input,
+          .chakra-select {
+            height: 30px;
+            border: 1px solid #8B8B8B;
+            border-radius: 5px;
+            background-color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 400;
+          }
+          
+          .chakra-input[aria-invalid*="true"],
+          .chakra-select[aria-invalid*="true"]{
+            border: none;
+          }
+          
+        }
+
+        //&:last-child {
+        //  .chakra-form-control {
+        //    margin-bottom: 0;
+        //  }
+        //}
+
+        .chakra-checkbox__control {
+          margin-right: 8px;
+          border: 2px solid #8B8B8B;
+        }
+
+        .chakra-checkbox__control:focus,
+        .chakra-checkbox__control[data-focus]
+        {
+          box-shadow: none;
+        }
+
+        .chakra-checkbox__control[data-checked] {
+          background-color: #002C5E;
+          border-color: #002C5E;
+        }
+      }
+    }
+  }
+
+}

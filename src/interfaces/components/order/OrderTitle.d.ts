@@ -1,0 +1,3 @@
+interface OrderTitleProps {
+  title: string;
+}

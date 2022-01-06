@@ -1,0 +1,44 @@
+.cart {
+  position: fixed;
+  right: 0;
+  top: calc(50vh - 38px);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  width: 64px;
+  height: 76px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  background-image: url(../../assets/icons/cartRegular.png);
+  background-repeat: no-repeat;
+  background-size: 36px 36px;
+  background-position: 10px 20px;
+
+  .icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #FF6770;
+    color: #FFFFFF;
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.cart:hover {
+  background-image: url(../../assets/icons/cartHover.png);
+  background-color: #002C5E;
+  transition: all .3s;
+}

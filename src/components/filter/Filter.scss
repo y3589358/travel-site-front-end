@@ -1,0 +1,29 @@
+.filter {
+  min-width: 270px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  padding-bottom: 25px;
+
+  .filter-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 25px 5px 25px;
+
+    .filter-title {
+      font-family: PingFang SC;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 18px;
+      color: #4A4A4A;
+    }
+
+    .filter-clean {
+      font-size: 12px;
+      font-weight: 400;
+      color: #002C5E;
+      cursor: pointer;
+    }
+  }
+}

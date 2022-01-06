@@ -1,0 +1,18 @@
+.basic-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  .location-nav-menu-wrapper {
+    border-bottom: 1px solid #D7D7D7;
+    box-shadow: 0 2px 5px #D7D7D7;
+  }
+
+  .content-wrapper {
+    flex: 1;
+    height: 100%;
+  }
+
+
+}

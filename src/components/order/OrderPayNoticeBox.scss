@@ -1,0 +1,44 @@
+.order-pay-notice-box {
+  background-color: #FFFFFF;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-bottom: 16px;
+  padding: 21px;
+
+  .order-pay-notice-box-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    line-height: 120%;
+    font-weight: 500;
+    color: #002C5E;
+    margin-bottom: 4px;
+
+    .icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    .text {
+      margin-left: 24px;
+    }
+  }
+
+  .order-pay-notice-box-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 120%;
+    color: #000000;
+
+    .time {
+      font-size: 24px;
+      line-height: 120%;
+      font-weight: 500;
+      color: #FF6770;
+      margin: 0 1px;
+    }
+  }
+}

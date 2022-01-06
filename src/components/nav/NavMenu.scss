@@ -1,0 +1,14 @@
+.nav-menu {
+  display: flex;
+  height: 60px;
+  align-items: center;
+
+  .chakra-popover__popper {
+    box-shadow: none;
+
+    .chakra-popover__content {
+      box-shadow: none;
+      border: none;
+    }
+  }
+}

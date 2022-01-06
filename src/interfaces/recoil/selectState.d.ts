@@ -1,0 +1,3 @@
+interface SelectState{
+    colourOptions:SelectItemState[];
+}

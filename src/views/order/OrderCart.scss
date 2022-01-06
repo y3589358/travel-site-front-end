@@ -1,0 +1,225 @@
+.order-cart {
+  margin-bottom: 24px;
+
+  .order-cart-title {
+    margin-top: 48px;
+
+    .order-cart-title-main {
+      font-size: 28px;
+      line-height: 33.6px;
+      font-weight: 500;
+    }
+
+    .order-cart-title-sub {
+      font-size: 16px;
+      line-height: 22.4px;
+      font-weight: 400;
+      margin-left: 10px;
+    }
+  }
+
+  .order-cart-filter {
+    margin-top: 27px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+
+    .item {
+      margin-right: 24px;
+
+      &.select-all {
+        margin-left: 16px;
+      }
+
+      &.label {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: #002C5E;
+
+        &.btn {
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .order-cart-container {
+    display: flex;
+
+    .order-cart-box-list {
+      flex: 1 0 auto;
+
+      .order-cart-box {
+        .order-cart-box-title {
+          color: #000000;
+          font-size: 18px;
+          line-height: 23.4px;
+          margin-top: 32px;
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    .order-cart-sidebar {
+      flex: 0 0 345px;
+      margin-left: 36px;
+
+      .order-cart-select-box {
+        background-color: #FFFFFF;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        padding: 16px 24px;
+
+        .order-cart-select-box-top {
+          display: flex;
+          justify-content: space-between;
+          align-items: end;
+          padding-bottom: 16px;
+          border-bottom: 1px dashed #C4C4C4;
+
+          .order-cart-select-box-label {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+            color: #000000;
+
+            .count {
+              margin: 0 6px;
+            }
+          }
+
+          .order-cart-select-box-total-amount {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 120%;
+            color: #002C5E;
+          }
+        }
+
+        .order-cart-select-box-bottom {
+          margin-top: 16px;
+
+          .btn {
+            width: 100%;
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 16px;
+            line-height: 22.4px;
+            font-weight: 400;
+
+            &.warning {
+              background-color: #F0D43A;
+            }
+
+            &.warning:hover{
+              background-color: #F0D43A80;
+            }
+      
+            &.warning:focus{
+              background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #F0D43A;
+              box-shadow: none;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .chakra-checkbox {
+    .chakra-checkbox__control {
+      width: 24px;
+      height: 24px;
+      border: 2px solid #8B8B8B;
+      border-radius: 4px;
+      color: #fff;
+      background-color: #fff;
+    }
+    .chakra-checkbox__control[data-checked]{
+      background-color: #002C5E;
+      border-color: #002C5E;
+      color: #FFFFFF;
+    }
+    .chakra-checkbox__control[data-indeterminate]{
+      background-color: #002C5E;
+    }
+    .chakra-checkbox__control[data-focus], .chakra-checkbox__control:focus{
+      box-shadow: 0 0 0 0px rgba(0,0,0,0);
+    }
+  }
+}
+
+#chakra-modal-order-cart-modal{
+  padding: 20px 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  .chakra-modal__header{
+    .title-icon{
+      height: 36px;
+      background-repeat: no-repeat;
+      background-size: 36px;
+      background-position: center;
+    }
+    .title-text{
+      margin-top: 8px;
+      text-align: center;
+      font-family: PingFang SC;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      color: #002C5E;
+    }
+  }
+  
+  .chakra-modal__close-btn{
+    opacity: 0;
+  }
+
+  .chakra-modal__body{
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: #333333;
+  }
+  
+  .chakra-modal__footer{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .chakra-button{
+      width: 96px;
+      height: 48px;
+      font-family: PingFang SC;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: #002C5E;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    .chakra-button.warning{
+      color: #002C5E;
+      background-color: #F0D43A;
+    }
+
+    .chakra-button.warning:focus{
+      box-shadow: none;
+    }
+
+    .chakra-button.warning:hover{
+      background: rgba(240, 212, 58, 0.5);
+    }
+  }
+}

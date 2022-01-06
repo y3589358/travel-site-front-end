@@ -1,0 +1,68 @@
+.order-pay-success-box {
+  .order-pay-success-box-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+
+    .icon {
+      width: 48px;
+      height: 48px;
+    }
+
+    .text {
+      font-size: 24px;
+      line-height: 120%;
+      font-weight: 500;
+      margin-left: 4px;
+      color: #002C5E;
+    }
+  }
+
+  .order-pay-success-box-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .btn {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0 24px;
+    height: 48px;
+    border-radius: 6px;
+    margin: 12px;
+
+    &.warning {
+      background-color: #F0D43A;
+      color: #002C5E;
+    }
+
+    &.warning:hover{
+      background-color: #F0D43A80;
+    }
+
+    &.warning:focus {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #F0D43A;
+      box-shadow: none;
+      border: none;
+    }
+
+
+
+    &.primary {
+      background-color: #002C5E;
+      color: #FFFFFF;
+    }
+
+    &.primary:hover {
+      background: rgba(0, 44, 94, 0.5);
+    }
+
+    &.primary:focus {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #002C5E;
+      color: #FFFFFF;
+      box-shadow:0 0 0 1px rgba(0, 0, 0, 0);
+    }
+  }
+}

@@ -1,0 +1,345 @@
+.date-range-picker {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  height: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+
+  .date-time-input {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    background: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #4A4A4A;
+
+    .date-time-input-icon {
+      margin-right: 8px;
+    }
+
+    &.selected {
+      background-color: #002C5E;
+      color: #FFFFFF;
+      font-weight: 400;
+      border: transparent;
+    }
+  }
+
+  .date-time-input:hover{
+    background: rgba(97, 144, 232, 0.1);
+    border: 1px solid #002C5E;
+  }
+
+  .date-time-input.selected:hover{
+    background-color: #002C5E;
+    border: none;
+  }
+
+  .date-time-input-wrapper {
+    height: auto;
+    position: relative;
+
+    .end-date {
+      margin-top: 36px;
+    }
+
+    .date-sep-line {
+      top: calc(50% - 10px);
+      left: 44%;
+      position: absolute;
+      border: 1px solid #002C5E;
+      width: 1px;
+      height: 20px;
+    }
+  }
+
+  .date-time {
+    height: 100%;
+
+    input {
+      height: 100%;
+      width: 100%;
+      border-radius: 6px;
+      text-align: center;
+    }
+  }
+
+  .SingleDatePicker {
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 2px;
+
+    .CalendarDay__selected_span,
+    .CalendarDay__selected {
+      background-color: transparent !important;
+    }
+
+    .SingleDatePickerInput {
+      height: 0;
+    }
+
+    .DateInput {
+      height: 0;
+      border: none;
+      outline: none;
+      background-color: transparent;
+
+      input {
+        height: 0;
+        line-height: 0;
+        color: transparent;
+        padding: 0;
+        border: none;
+      }
+
+      .DateRangePickerInput_arrow {
+        display: none;
+      }
+
+      .DateInput_fang {
+        display: none;
+      }
+    }
+  }
+
+  .DateRangePicker {
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 2px;
+
+    .DateRangePickerInput {
+      height: 0;
+
+      .DateInput {
+        height: 0;
+        border: none;
+        outline: none;
+        background-color: transparent;
+
+        input {
+          height: 0;
+          line-height: 0;
+          color: transparent;
+          padding: 0;
+          border: none;
+        }
+      }
+
+      .DateRangePickerInput_arrow {
+        display: none;
+      }
+
+      .DateInput_fang {
+        display: none;
+      }
+    }
+
+  }
+
+  .DayPickerNavigation_button {
+    .prev {
+      position: absolute;
+      top: 25px;
+      left: 22px;
+    }
+
+    .next {
+      position: absolute;
+      top: 25px;
+      right: 22px;
+    }
+  }
+
+  .DayPickerKeyboardShortcuts_buttonReset {
+    display: none;
+  }
+
+  .CalendarDay {
+    border-width: 1px;
+    border-color: transparent;
+  }
+  
+  .CalendarDay__default:hover{
+    border-radius: 25px;
+  }
+
+  .CalendarDay__selected_span:not(.CalendarDay__selected_start):not(.CalendarDay__selected_end) {
+    background-color: rgba(0, 44, 94, 0.1);
+    color: #002C5E;
+  }
+
+  .CalendarDay__selected_start {
+    .day-wrapper {
+      .selected-range-background {
+        background-color: rgba(0, 44, 94, 0.1);
+        margin-top: -1px;
+        margin-left: 24px;
+        width: 25px !important;
+      }
+    }
+  }
+
+  .CalendarDay__selected_end {
+    .day-wrapper {
+      .selected-range-background {
+        background-color: rgba(0, 44, 94, 0.1);
+        margin-top: -1px;
+        margin-left: -1px;
+        width: 25px !important;
+      }
+    }
+  }
+
+  .CalendarDay__selected {
+    background-color: transparent;
+  }
+
+  .CalendarDay__selected:not(.CalendarDay__selected_start):not(.CalendarDay__selected_end) {
+    background-color: rgba(0, 44, 94, 0.1);
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+  }
+
+  .CalendarDay__selected {
+    .day-wrapper {
+      height: 100%;
+
+      .selected-range-background {
+        position: absolute;
+        width: 50px;
+        height: 49px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      .selected-background {
+        position: absolute;
+        width: 50px;
+        height: 49px;
+        top: -1px;
+        left: -1px;
+        border-radius: 25px;
+        background-color: #002C5E;
+        z-index: 2;
+      }
+
+      .day-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 3;
+      }
+    }
+  }
+
+  .CalendarDay__hovered_span:hover,
+  .CalendarDay__hovered_span {
+    background: rgba(0, 44, 94, 0.1);
+    border: none;
+    color: #002C5E;
+  }
+
+  .day-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .CalendarMonth_caption {
+    strong {
+      font-size: 14px;
+      line-height: 120%;
+      color: #333333;
+      font-weight: normal;
+    }
+  }
+
+  .CalendarDay__blocked_calendar:active,
+  .CalendarDay__blocked_calendar:hover,
+  .CalendarDay__blocked_calendar {
+    background: #FFFFFF;
+    color: #CACCCD;
+  }
+
+  .DateRangePicker_picker,
+  .SingleDatePicker_picker {
+    background-color: transparent;
+  }
+
+  .date-range-picker-bottom {
+    height: 64px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    margin-left: 24px;
+
+    .extra {
+      display: flex;
+      align-items: center;
+    }
+
+    .buttons {
+      display: flex;
+      align-items: start;
+      justify-content: end;
+    }
+  }
+
+  .btn {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0 24px;
+    height: 48px;
+    border-radius: 6px;
+    margin-left: 12px;
+
+    &.primary {
+      background-color: #002C5E;
+      color: #FFFFFF;
+    }
+
+    &.primary:hover {
+      background: rgba(0, 44, 94, 0.5);
+    }
+
+    &.primary:focus {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #002C5E;
+      color: #FFFFFF;
+      box-shadow:0 0 0 1px rgba(0, 0, 0, 0);
+    }
+
+    &.plain {
+      background-color: #FFFFFF;
+      color: #002C5E;
+      border: 1px solid #002C5E;
+    }
+
+    &.plain:hover {
+      color: #002C5E80;
+      border: 1px solid rgba(0, 44, 94, 0.5);
+    }
+
+    &.plain:focus {
+      color: #002C5E;
+      border: 1px solid rgba(0, 44, 94, 0.5);
+      background: linear-gradient(0deg, rgba(0, 44, 94, 0.2), rgba(0, 44, 94, 0.2));
+      border: 1px solid #002C5E;
+      box-shadow: none;
+    }
+  }
+}

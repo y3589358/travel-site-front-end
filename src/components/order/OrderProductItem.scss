@@ -1,0 +1,89 @@
+.order-product-item {
+  padding: 24px 16px 24px 24px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-bottom: 16px;
+
+  .order-product-item-no {
+    display: flex;
+    justify-content: space-between;
+    color: #333333;
+    padding-bottom: 4px;
+    border-bottom: 1px dashed #C4C4C4;
+    margin-bottom: 4px;
+
+    .label {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 130%;
+    }
+
+    .value {
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+
+  .order-product-item-title {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 130%;
+    margin-bottom: 8px;
+  }
+
+  .order-product-item-subtitle {
+    color: #333333;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 140%;
+    margin-bottom: 4px;
+  }
+
+  .order-product-item-notice-list {
+    margin-bottom: 9px;
+
+    .order-product-item-notice-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+      line-height: 120%;
+      margin-bottom: 4px;
+
+      .label {
+        color: #8B8B8B;
+      }
+
+      .value {
+        color: #333333;
+      }
+    }
+  }
+
+  .order-product-item-cancel-policy {
+    display: flex;
+    justify-content: end;
+
+    .icon {
+      height: 23px;
+      margin-right: 2px;
+    }
+  }
+
+  .order-product-item-price {
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #002C5E;
+
+    .unit {
+      margin-right: 10px;
+    }
+  }
+}

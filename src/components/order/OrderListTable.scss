@@ -1,0 +1,187 @@
+.order-list-table {
+  .btn {
+    height: 48px;
+    padding: 0 32px;
+    border-radius: 6px;
+    margin-left: 8px;
+    font-weight: normal;
+
+    &.warning {
+      color: #002C5E;
+      background-color: #F0D43A;
+      border: 1px solid #F0D43A;
+    }
+
+    &.warning:hover{
+      background-color: #F0D43A80;
+    }
+
+    &.warning:focus{
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #F0D43A;
+      box-shadow:0 0 0 1px rgba(0, 0, 0, 0);
+      border: 1px solid transparent;
+    }
+  }
+
+  .chakra-checkbox {
+    .chakra-checkbox__control {
+      width: 24px;
+      height: 24px;
+      border: 2px solid #8B8B8B;
+      border-radius: 4px;
+    }
+  }
+
+  .order-list-table-top {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 13px;
+
+    .total {
+      font-size: 18px;
+      line-height: 140%;
+      color: #000000;
+    }
+  }
+
+  .order-list-table-content {
+    .order-list-table-checkbox{
+      &.checked {
+        .chakra-checkbox__control {
+          background-color: #002C5E;
+          border-color: #002C5E;
+          color: #fff;
+        }
+      }
+      .chakra-checkbox__control {
+        border: 1px solid #4A4A4A;
+        border-radius: 1px;
+        color: #fff;
+        background-color: #002C5E;
+      }
+      .chakra-checkbox__control[data-indeterminate]{
+        background-color: #002C5E;
+      }
+    }
+    
+    .order-list-table-header {
+      display: flex;
+      align-items: center;
+      background-color: #002C5E;
+      height: 56px;
+      color: #FFFFFF;
+      font-size: 14px;
+      line-height: 120%;
+      border-radius: 4px;
+      margin-bottom: 8px;
+
+      .header-cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+
+
+      .chakra-checkbox {
+        .chakra-checkbox__control {
+          width: 24px;
+          height: 24px;
+          border: 2px solid #FAFAFA;
+          border-radius: 4px;
+        }
+        .chakra-checkbox__control[data-focus], .chakra-checkbox__control:focus {
+          box-shadow: 0 0 0 0px rgba(0,0,0,0);
+        }
+      }
+    }
+
+    .order-list-table-body {
+      border-top: 1px solid #8B8B8B;
+      margin-bottom: 48px;
+      .row:hover{
+        background: #002C5E1A;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        height: 104px;
+        font-size: 14px;
+        color: #000000;
+        border-left: 1px solid #8B8B8B;
+        border-right: 1px solid #8B8B8B;
+        border-bottom: 1px solid #8B8B8B;
+
+        .cell {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+
+          .order-list-table-checkbox{
+            &.checked {
+              .chakra-checkbox__control {
+                background-color: #002C5E;
+                border-color: #002C5E;
+                color: #fff;
+              }
+            }
+            
+            .chakra-checkbox__control {
+              border: 2px solid #8B8B8B;
+              border-radius: 4px;
+              color: #fff;
+              background-color: #fff;
+            }
+
+            .chakra-checkbox__control[data-indeterminate]{
+              background-color: #002C5E;
+            }
+
+            .chakra-checkbox__control[data-checked]{
+              background-color: #002C5E;
+              border-color: #002C5E;
+             }
+
+             .chakra-checkbox__control[data-focus], .chakra-checkbox__control:focus {
+              box-shadow: 0 0 0 0px rgba(0,0,0,0);
+             }
+
+          }
+
+          &.sep {
+            border-right: 1px solid #D7D7D7;
+          }
+
+          &.order-no {
+            cursor: pointer;
+          }
+          
+          &.order-name{
+            cursor: pointer;
+          }
+
+          .product-info {
+            color: #8B8B8B;
+          }
+
+          .status {
+            height: 20px;
+            color: #53C0A6;
+            background-color: #EDFFF9;
+            border-radius: 34px;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 0 13px;
+          }
+        }
+      }
+    }
+
+    .order-list-table-pagination {
+      width: 100%;
+      text-align: right;
+    }
+  }
+}

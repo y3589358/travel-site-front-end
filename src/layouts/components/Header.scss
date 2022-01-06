@@ -1,0 +1,35 @@
+.layout-header {
+  .header-top {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #D7D7D7;
+
+    .logo-wrapper {
+      flex-basis: 200px;
+      width: 200px;
+      padding-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      cursor: pointer;
+
+      img.logo {
+        height: 39px;
+      }
+
+      .separator-line {
+        width: 1px;
+        height: 32px;
+        border-right: 1px solid #D7D7D7;
+        margin-left: 20px;
+      }
+    }
+
+    .navbar {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 40px;
+    }
+  }
+}

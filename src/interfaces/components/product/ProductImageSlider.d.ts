@@ -1,0 +1,3 @@
+interface ProductImageSliderProps {
+  images?: string[];
+}

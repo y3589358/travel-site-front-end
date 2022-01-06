@@ -1,0 +1,13 @@
+.layout-container {
+  display: flex;
+
+  .spacing {
+    width: 10%;
+    flex: 0 0 10%;
+  }
+
+  .content {
+    width: 80%;
+    flex: 0 0 80%;
+  }
+}

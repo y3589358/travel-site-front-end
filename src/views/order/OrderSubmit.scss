@@ -1,0 +1,82 @@
+.order-submit {
+  .order-submit-top {
+    margin-top: 20px;
+    position: relative;
+    height: 50px;
+
+    .order-submit-nav-step-list-wrapper {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      z-index: -1;
+
+      .nav-step-list {
+        width: 640px;
+      }
+    }
+  }
+
+  .order-submit-title {
+    font-size: 28px;
+    line-height: 120%;
+    font-weight: 500;
+    color: #4A4A4A;
+    margin-top: 16px;
+    margin-bottom: 10px;
+  }
+
+  .order-submit-container {
+    display: flex;
+
+    .order-submit-content {
+      flex: 1 0 auto;
+
+      .order-travel-info-box {
+        margin-top: 16px;
+        margin-bottom: 48px;
+      }
+
+      .order-contact-info-box {
+        margin-top: 16px;
+      }
+
+      .order-submit-coupon {
+        margin-top: 16px;
+        margin-bottom: 48px;
+        background-color: #FFFFFF;
+        padding: 24px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+
+        .label {
+          flex: 0 0 28px;
+          font-size: 14px;
+          line-height: 120%;
+          font-weight: normal;
+          color: #333333;
+          margin-right: 10px;
+        }
+
+        .chakra-select__wrapper {
+          flex: 0 0 475px;
+
+          .chakra-select {
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid #8B8B8B;
+            background-color: #FFFFFF;
+          }
+        }
+      }
+    }
+
+    .order-submit-sidebar {
+      flex: 0 0 340px;
+      margin-left: 16px;
+    }
+  }
+}

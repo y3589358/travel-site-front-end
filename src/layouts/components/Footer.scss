@@ -1,0 +1,84 @@
+.layout-footer {
+  justify-self: end;
+  // height: 275px;
+  color: #FFFFFF;
+  background-color: #4A4A4A;
+
+  .footer-top {
+    height: 210px;
+    border-bottom: 1px solid #545454;
+    display: flex;
+
+    .info-container {
+      margin-top: 35px;
+
+      .title {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .item {
+        font-size: 13px;
+        margin-bottom: 5px;
+        color: #D7D7D7;
+      }
+    }
+
+    .logo-wrapper {
+      text-align: right;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      height: 100%;
+      flex-basis: calc(100% / 4);
+
+      img.logo {
+        height: 76px;
+      }
+    }
+
+    .about {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      flex-basis: calc(100% / 4);
+    }
+
+    .contact {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      flex-basis: calc(100% / 4);
+    }
+
+    .wechat {
+      display: flex;
+      height: 100%;
+      flex-basis: calc(100% / 4);
+
+      .wechat-image {
+        height: 95px;
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    color: #8B8B8B;
+
+    .links {
+      text-align: center;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+}

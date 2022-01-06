@@ -1,0 +1,3 @@
+interface NavMenuProps {
+  navItems: NavItem[];
+}

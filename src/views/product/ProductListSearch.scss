@@ -1,0 +1,25 @@
+.product-list-search {
+  display: flex;
+
+  .filter-list {
+    margin-top: 50px;
+    flex-basis: 270px;
+    margin-right: 40px;
+    .date-range-picker{
+      padding-left:25px;
+      .date-time-input{
+        width: 220px;
+      }
+    }
+  }
+
+  .product-list-wrapper {
+    flex-grow: 1;
+
+    .product-thumbnail {
+      margin-right: 0;
+      width: 31.5%;
+      flex: 0 0 auto;
+    }
+  }
+}

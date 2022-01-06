@@ -1,0 +1,28 @@
+.range-filter {
+  .range-filter-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+
+    .range-filter-sep {
+      width: 12px;
+      flex-basis: 12px;
+      height: 1px;
+      background: #4A4A4A;
+      margin: 0 10px;
+    }
+
+    .range-filter-input {
+      flex: 1;
+      border: 1px solid #4A4A4A;
+      border-radius: 4px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .range-filter-input:focus{
+      color: #002C5E;
+    }
+  }
+}

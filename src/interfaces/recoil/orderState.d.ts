@@ -1,0 +1,3 @@
+interface OrderState {
+  steps: NavStep[];
+}

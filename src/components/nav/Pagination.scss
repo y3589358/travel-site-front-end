@@ -1,0 +1,28 @@
+.pagination {
+  .rc-pagination {
+    .rc-pagination-prev,
+    .rc-pagination-next,
+    .rc-pagination-item {
+      border: none;
+      border-radius: 2px;
+      background-color: #EDEDED;
+      font-size: 14px;
+      line-height: 32px;
+      color: #000000;
+      height: 32px;
+
+      &.rc-pagination-item-active {
+        background-color: #002C5E;
+
+        a {
+          color: #FFFFFF;
+        }
+      }
+
+      button.rc-pagination-item-link {
+        border: none;
+        background-color: #EDEDED;
+      }
+    }
+  }
+}

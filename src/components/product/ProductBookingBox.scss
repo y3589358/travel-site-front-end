@@ -1,0 +1,108 @@
+.product-booking-box {
+  padding: 16px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+
+  .product-booking-box-top {
+    height: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px dashed #C4C4C4;
+    box-sizing: content-box;
+
+    .product-booking-box-top-left {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .product-booking-box-top-right {
+      .price-unit {
+        font-size: 22px;
+        font-weight: 500;
+        margin-right: 10px;
+      }
+
+      .price-value {
+        font-size: 22px;
+        font-weight: 500;
+      }
+
+      .price-suffix {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .product-booking-box-content {
+    margin-top: 16px;
+
+    .notice-item {
+      height: 24px;
+      line-height: 24px;
+      display: flex;
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+      }
+
+      .text {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .product-booking-box-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    .btn {
+      width: 140px;
+      flex: 0 0 140px;
+      font-size: 16px;
+      font-weight: 400;
+
+      &.location {
+        background-color: #F0D43A;
+        color: #002C5E;
+      }
+
+      &.location:hover{
+        background-color: #F0D43A80;
+      }
+
+      &.location:focus{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #F0D43A;
+        box-shadow: none;
+        border: none;
+      }
+
+      &.select {
+        background-color: #002C5E;
+        color: #FFFFFF;
+      }
+
+      &.select:hover {
+        background: rgba(0, 44, 94, 0.5);
+        color: #FFFFFF;
+      }
+
+      &.select:focus {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #002C5E;
+        color: #FFFFFF;
+        box-shadow: none;
+        border: none;
+      }
+    }
+  }
+}

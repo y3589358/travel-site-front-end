@@ -1,0 +1,85 @@
+.order-pay-box {
+  padding: 20px 28px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+
+  .order-pay-box-notice {
+    padding: 14px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FF6770;
+    background-color: rgba(255, 103, 112, 0.1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      margin-right: 8px;
+    }
+  }
+
+  .chakra-radio {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+
+    .chakra-radio__control {
+      border: 1px solid #4A4A4A;
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+    }
+
+    .chakra-radio__control[data-checked]{
+      background-color: #ffff;
+      color: #002C5E;
+    }
+
+    .chakra-radio__control[aria-checked="true"]::before, .chakra-radio__control[data-checked]::before{
+      width: 8px;
+      height: 8px;
+    }
+
+    .chakra-radio__control[data-focus]{
+      box-shadow: none;
+    }
+
+    .chakra-radio__control[data-checked][data-hover]{
+      border-color: #8B8B8B;
+    }
+
+
+    .chakra-radio__label {
+      font-size: 14px;
+      line-height: 120%;
+      color: #000000;
+      display: flex;
+      align-items: center;
+
+      .label {
+        margin-right: 8px;
+      }
+
+      .info {
+        color: #8B8B8B;
+        margin-right: 8px;
+      }
+
+      .balance {
+        font-size: 16px;
+        color: #002C5E;
+        line-height: 120%;
+
+        .unit {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .image {
+      img {
+        height: 24px;
+      }
+    }
+  }
+}

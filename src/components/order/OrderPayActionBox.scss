@@ -1,0 +1,101 @@
+.order-pay-action-box {
+  background-color: #FFFFFF;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 24px;
+
+  .order-pay-action-box-top {
+    padding-bottom: 12.5px;
+    margin-bottom: 12.5px;
+    border-bottom: 1px dashed #C4C4C4;
+    font-size: 14px;
+    line-height: 120%;
+
+    .title {
+      font-size: 24px;
+      line-height: 120%;
+      font-weight: 500;
+      color: #333333;
+      margin-bottom: 16px;
+    }
+
+    .label {
+      color: #8B8B8B;
+    }
+
+    .unit {
+      margin-right: 5px;
+    }
+
+    .order-pay-action {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+
+      .value {
+        color: #333333;
+      }
+    }
+
+    .order-pay-action-discount {
+      display: flex;
+      justify-content: space-between;
+
+      .value {
+        color: #FF6770;
+      }
+    }
+  }
+
+  .order-pay-action-box-bottom {
+    .order-pay-action-pay-amount {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .label {
+        font-size: 16px;
+        line-height: 140%;
+        color: #000000;
+      }
+
+      .value {
+        color: #002C5E;
+        font-size: 24px;
+        line-height: 120%;
+        font-weight: 500;
+
+        .unit {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+      border-radius: 4px;
+      padding: 10px;
+      font-size: 16px;
+      line-height: 22.4px;
+      font-weight: 400;
+
+      &.warning {
+        background-color: #F0D43A;
+      }
+
+      &.warning:hover{
+        background-color: #F0D43A80;
+      }
+  
+      &.warning:focus{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #F0D43A;
+        box-shadow: none;
+        border: none;
+      }
+
+      &.btn-pay {
+        margin-top: 12.5px;
+      }
+    }
+  }
+}

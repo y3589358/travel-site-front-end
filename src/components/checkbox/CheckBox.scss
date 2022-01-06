@@ -1,0 +1,25 @@
+.basic-layout {
+  .content-wrapper {
+      .btn.primary:hover {
+        background: rgba(0, 44, 94, 0.5);
+       }
+    
+      .btn.primary:focus {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #002C5E;
+        color: #FFFFFF;
+        box-shadow:0 0 0 1px rgba(0, 0, 0, 0);
+      }
+    
+      .btn.warning:hover{
+        background-color: #F0D43A80;
+      }
+    
+      .btn.warning:focus {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #F0D43A;
+        box-shadow: none;
+        border: none;
+      }
+  }
+}
+
+  

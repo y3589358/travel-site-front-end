@@ -1,0 +1,30 @@
+.order-paid {
+  .order-paid-top {
+    margin: 48px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .order-paid-container {
+    display: flex;
+    margin-bottom: 48px;
+
+    .order-paid-content {
+      flex: 1 0 auto;
+
+      .order-travel-info-box {
+        margin-top: 16px;
+      }
+
+      .order-contact-info-box {
+        margin-top: 16px;
+      }
+    }
+
+    .order-paid-sidebar {
+      flex: 0 0 340px;
+      margin-left: 24px;
+    }
+  }
+}

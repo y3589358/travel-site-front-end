@@ -1,0 +1,3 @@
+interface NavMenuItemProps {
+  item: NavItem;
+}
